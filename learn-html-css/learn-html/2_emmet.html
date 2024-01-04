@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 자식노드: > -->
+    <!-- div>ul>li 의 결과 -->
+    <div>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- 형제노드: + -->
+    <!-- div>ul+ol+div 의 결과 -->
+    <div>
+      <ul></ul>
+      <ol></ol>
+      <div></div>
+    </div>
+
+    <!-- 반복하기 * -->
+    <!-- div>ul>li*3 의 결과 -->
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- 아이디 # -->
+    <!-- span#item 의 결과 -->
+    <span id="item"></span>
+    <!-- id emmet 태그 기본값은 div태그이므로 #item2의 결과는 -->
+    <div id="item"></div>
+
+    <!-- 클래스 . -->
+    <!-- span.title 의 결과 -->
+    <!-- 마찬가지로 기본값 태그는 div 태그 -->
+    <span class="title"></span>
+    <div class="title"></div>
+
+    <!-- 콘텐츠 {} -->
+    <!-- p.container{Hello World~!} ]의 결과-->
+    <p class="container">Hello World~!</p>
+
+    <!-- 자동 넘버링 $ -->
+    <!-- p.container{item$} 의 결과 -->
+    <p class="container">item1</p>
+    <!-- p.container{item$}*5 의 결과 -->
+    <p class="container">item1</p>
+    <p class="container">item2</p>
+    <p class="container">item3</p>
+    <p class="container">item4</p>
+    <p class="container">item5</p>
+  </body>
+</html>
