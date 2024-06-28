@@ -9,13 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
     // Dependency Injection
-    @Autowired // 객체 생성 시점에 스프링 컨테이너에서 해당 스프링 빈을 찾아 주입
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
